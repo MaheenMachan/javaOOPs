@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class StarPyramid
 {  
     public static void pyramidPattern(int n) 
@@ -17,7 +19,9 @@ public class StarPyramid
   
     public static void main(String args[]) //driver function
     { 
-        int n = 5; 
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the number of rows to print ");
+        int n=s.nextInt();
         pyramidPattern(n); 
     } 
 }
